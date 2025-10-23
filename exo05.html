@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>tableaux</title>
+</head>
+<body>
+    <table border="1" summary="inventaire boutique" aria-describedby="caption">
+        <caption id="caption">Inventaire Boutique</caption>
+        <thead>
+            <tr>
+                <th>Produit</th>
+                <th>Catégorie</th>
+                <th>Prix</th>
+                <th>Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Laptop</td>
+                <td>A</td>
+                <td>799</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Souris</td>
+                <td rowspan="2">Accessoires</td>
+                <td>19</td>
+                <td>57</td>
+            </tr>
+            <tr>
+                <td>Clavier</td>
+                <td>39</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Ecran</td>
+                <td>Informatique</td>
+                <td>189</td>
+                <td>23</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total articles distincts : 4</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

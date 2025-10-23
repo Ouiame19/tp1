@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Exo 09 - Accessibilité et Médias</title>
+</head>
+<body>
+    <a href="#main" class="skip-link">Aller au contenu</a>
+    <header>
+        <h1>Bienvenue sur mon site</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main id="main">
+        <h2>Exemple de contenu multimédia</h2>
+        <figure>
+            <img src="https://via.placeholder.com/600x400" alt="Description de l'image" />
+            <figcaption>Voici un exemple d'image illustrative pour le blog.</figcaption>
+        </figure>
+        <section>
+            <h3>Extrait audio :</h3>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3" />
+                Audio non disponible.
+            </audio>
+        </section>
+        <section>
+            <article>
+                <h3>Premier article</h3>
+                <p>Ceci est le contenu du premier article. Il s'agit d'un exemple de texte qui peut être développé pour plus de détails.</p>
+            </article>
+
+            <article>
+                <h3>Deuxième article</h3>
+                <p>Voici un autre exemple d'article. Ce texte peut être modifié pour mieux illustrer le sujet en question.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 - Mon Blog - Tous droits réservés.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('a, button, input, textarea').forEach((el, index) => {
+            el.setAttribute('tabindex', index + 1);
+        });
+    </script>
+</body>
+</html>
